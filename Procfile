@@ -1,0 +1,1 @@
+web: gunicorn fullystacked.wsgi
