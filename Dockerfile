@@ -2,12 +2,15 @@ FROM python:3.5
 
 ENV PYTHONUNBUFFERED 1
 
-RUN mkdir /code
+RUN mkdir /fullystacked/
 
-WORKDIR /code
+ADD . /fullystacked/
 
-ADD requirements.txt /code/
+WORKDIR /fullystacked
 
-RUN pip install -r requirements.txt
+ADD requirements /code/requirements
 
-ADD . /code/
+RUN pip install -r requirements/production.txt
+
+CMD ['./manage.py', 'migrate', '--settings=fullystacked.settings.production']
+CMD ["./manage.py", "runserver", "0.0.0.0:8000", "--settings=fullystacked.settings.production"]
