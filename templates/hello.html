@@ -1,0 +1,83 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <style>
+    html, body {
+        color: rgba(237, 79, 101, 0.8);
+        background-color: #5f5974;
+        font-family: 'Press Start 2P', cursive;
+        height: 100%;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+    }
+    .flex-container {
+        height: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-item {
+        padding: 5px;
+        text-align: center;
+    }
+    .img-circle:hover {
+        border: 1px;
+        width: 200px;
+        border-radius: 50%;
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+    .img-circle {
+        width: 200px;
+        border-radius: 50%;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+    p.social > a path {
+        fill: #FFFFFF
+    }
+
+    p.social > a:hover path {
+        fill: rgba(237, 79, 101, 0.8)
+    }
+
+    p.social > a circle {
+        stroke: #FFFFFF;
+        stroke-width: 2;
+    }
+
+</style>
+</head>
+<body>
+    <div class="flex-container">
+    <div class="flex-item">
+        <div id="hello">
+            <img class="img-circle" src="http://orig02.deviantart.net/309b/f/2012/052/2/a/pixel_unicorn_by_ghilliez-d4qhe47.png">
+            <h1>Lauren Lewis</h1>
+            <h2>Software Engineer</h2>
+            <p class="social">
+                <a href="https://linkedin.com/in/lauren-lewis-08172799">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36" width="36"
+                         viewBox="0 0 48 48" version="1.1">
+                        <g transform="translate(2,2)" style="fill:none;stroke:#none;">
+                            <g>
+                                <circle id="path-1" cx="22" cy="22" r="22"/>
+                                <path d="m 12.504469,18.413113 3.898165,0 0,13.585606 -3.898165,0 0,-13.585606 z m 1.849717,-1.699321 -0.02822,0 C 12.914864,16.713792 12,15.675247 12,14.360097 12,13.018056 12.94191,12 14.381232,12 c 1.438147,0 2.322437,1.015495 2.350659,2.356256 0,1.315149 -0.912512,2.357536 -2.377705,2.357536 l 0,0 z M 32,32 l -4.420273,0 0,-7.03163 c 0,-1.840185 -0.691439,-3.095147 -2.2119,-3.095147 -1.162982,0 -1.809737,0.846459 -2.110772,1.664746 -0.112888,0.291971 -0.09525,0.700474 -0.09525,1.110257 l 0,7.351774 -4.379116,0 c 0,0 0.05644,-12.45486 0,-13.586887 l 4.379116,0 0,2.132155 c 0.258702,-0.932257 1.658043,-2.262773 3.89111,-2.262773 2.770461,0 4.947084,1.955436 4.947084,6.16212 L 32,32 l 0,0 z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </p>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
+<!--CHECK THIS OUT LATER-->
+<!--https://codepen.io/ruandre/pen/howFi-->

@@ -6,4 +6,4 @@ class ViewsTestClass(TestCase):
         """Verifies text in response"""
         testclient = Client()
         response = testclient.get('/')
-        self.assertIn('Hello, World!', str(response.content))
+        self.assertIn('Lauren Lewis', str(response.content))
